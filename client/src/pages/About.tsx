@@ -4,6 +4,7 @@ import { CheckCircle, Heart, Shield, Users, ArrowRight } from "lucide-react";
 
 const TEAM_IMAGE = "/manus-storage/meet_the_team_v3_3f4f8fbc.png";
 const TRAINING_IMAGE = "/manus-storage/training_workshop_691de047.png";
+const WENDY_IMAGE = "/manus-storage/wendy_ejihkeme_f4306ac8.jpg";
 
 const values = [
   { icon: Heart, title: "Compassion", description: "Every interaction is guided by genuine empathy and care for the individual." },
@@ -43,6 +44,30 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-4 bg-[var(--gold-primary)]/10 rounded-2xl rotate-2"></div>
               <img src={TEAM_IMAGE} alt="Our Diverse Care Team" className="relative rounded-2xl shadow-lg w-full object-cover aspect-[4/3]" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-[var(--gold-primary)]/10 rounded-2xl rotate-2"></div>
+              <img src={WENDY_IMAGE} alt="Wendy Ejihkeme, Founder" className="relative rounded-2xl shadow-lg w-full object-cover aspect-[3/4]" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-[var(--purple-primary)] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Meet Our Founder</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                <span className="font-semibold text-foreground">Wendy Ejihkeme</span> founded Good Shepherd HomeCare Ltd with a clear mission: to transform home care by placing genuine human connection at its heart.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                With years of experience in the care sector, Wendy recognised that families needed more than just a service provider — they needed a partner they could trust completely. This insight became the foundation of Good Shepherd HomeCare Ltd.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Today, Wendy leads a team of dedicated professionals who share her vision of delivering compassionate, person-centred care that truly adapts to each individual's unique needs.
+              </p>
             </div>
           </div>
         </div>
