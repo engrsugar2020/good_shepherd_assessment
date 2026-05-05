@@ -31,7 +31,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-[var(--purple-primary)] mb-6">Our Story</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Good Shepherd HomeCare Ltd was founded by Wendy Ejikeme with a simple but powerful vision: to provide home care that truly adapts to the individual. Having witnessed first-hand the challenges families face when seeking quality care, Wendy set out to create a service that puts people first.
+                Good Shepherd HomeCare Ltd was founded by Wendy Ejihkeme with a simple but powerful vision: to provide home care that truly adapts to the individual. Having witnessed first-hand the challenges families face when seeking quality care, Wendy set out to create a service that puts people first.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Today, we serve families across Glasgow, East Dunbartonshire, Partick, Bearsden and Milngavie with a diverse team of caregivers who bring warmth, professionalism, and genuine connection to every home they enter.
