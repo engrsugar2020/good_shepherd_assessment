@@ -3,7 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
-import { createCareAssessment, getAllCareAssessments, updateCareAssessmentStatus } from "./db";
+import { createCareAssessment, getAllCareAssessments, updateCareAssessmentStatus, createTestimonial, getPublishedTestimonials, getAllTestimonials, deleteTestimonial, createBlogPost, getPublishedBlogPosts, getBlogPostBySlug, getAllBlogPosts, updateBlogPost, deleteBlogPost } from "./db";
 import { notifyOwner } from "./_core/notification";
 import { TRPCError } from "@trpc/server";
 
@@ -80,6 +80,99 @@ export const appRouter = router({
       )
       .mutation(async ({ input }) => {
         await updateCareAssessmentStatus(input.id, input.status);
+        return { success: true };
+      }),
+  }),
+
+  testimonials: router({
+    published: publicProcedure.query(async () => {
+      return await getPublishedTestimonials();
+    }),
+    list: adminProcedure.query(async () => {
+      return await getAllTestimonials();
+    }),
+    create: adminProcedure
+      .input(z.object({
+        clientName: z.string().min(1),
+        relationship: z.string().optional().default(""),
+        location: z.string().optional().default(""),
+        rating: z.number().min(1).max(5),
+        content: z.string().min(1),
+        serviceType: z.string().optional().default(""),
+      }))
+      .mutation(async ({ input }) => {
+        await createTestimonial({
+          clientName: input.clientName,
+          relationship: input.relationship || null,
+          location: input.location || null,
+          rating: input.rating,
+          content: input.content,
+          serviceType: input.serviceType || null,
+          isPublished: "yes",
+        });
+        return { success: true };
+      }),
+    delete: adminProcedure
+      .input(z.object({ id: z.number() }))
+      .mutation(async ({ input }) => {
+        await deleteTestimonial(input.id);
+        return { success: true };
+      }),
+  }),
+
+  blog: router({
+    published: publicProcedure.query(async () => {
+      return await getPublishedBlogPosts();
+    }),
+    bySlug: publicProcedure
+      .input(z.object({ slug: z.string() }))
+      .query(async ({ input }) => {
+        return await getBlogPostBySlug(input.slug) ?? null;
+      }),
+    list: adminProcedure.query(async () => {
+      return await getAllBlogPosts();
+    }),
+    create: adminProcedure
+      .input(z.object({
+        title: z.string().min(1),
+        slug: z.string().min(1),
+        excerpt: z.string().optional().default(""),
+        content: z.string().min(1),
+        category: z.string().optional().default(""),
+        imageUrl: z.string().optional().default(""),
+      }))
+      .mutation(async ({ input, ctx }) => {
+        await createBlogPost({
+          title: input.title,
+          slug: input.slug,
+          excerpt: input.excerpt || null,
+          content: input.content,
+          category: input.category || null,
+          imageUrl: input.imageUrl || null,
+          isPublished: "yes",
+          authorId: ctx.user.id,
+        });
+        return { success: true };
+      }),
+    update: adminProcedure
+      .input(z.object({
+        id: z.number(),
+        title: z.string().optional(),
+        excerpt: z.string().optional(),
+        content: z.string().optional(),
+        category: z.string().optional(),
+        imageUrl: z.string().optional(),
+        isPublished: z.enum(["yes", "no"]).optional(),
+      }))
+      .mutation(async ({ input }) => {
+        const { id, ...data } = input;
+        await updateBlogPost(id, data as any);
+        return { success: true };
+      }),
+    delete: adminProcedure
+      .input(z.object({ id: z.number() }))
+      .mutation(async ({ input }) => {
+        await deleteBlogPost(input.id);
         return { success: true };
       }),
   }),

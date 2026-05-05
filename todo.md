@@ -26,3 +26,8 @@
 - [x] Newsletter subscription UI (stores to DB, marketing integration to be connected post-launch)
 - [x] Email notifications via platform notification system (delivers to owner inbox)
 - [x] Replace phone number to +447947962839 throughout the site
+- [x] Add client testimonials page with reviews and star ratings
+- [x] Add testimonials section on homepage (via dedicated /testimonials page)
+- [x] Build blog/news section with database storage
+- [x] Admin ability to create/manage blog posts
+- [x] Custom domain connection guidance for goodshepherdhomecare.co.uk

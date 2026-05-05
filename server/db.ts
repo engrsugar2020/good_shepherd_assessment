@@ -1,6 +1,6 @@
 import { eq, desc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, careAssessments, InsertCareAssessment, CareAssessment } from "../drizzle/schema";
+import { InsertUser, users, careAssessments, InsertCareAssessment, CareAssessment, testimonials, InsertTestimonial, Testimonial, blogPosts, InsertBlogPost, BlogPost } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -106,4 +106,69 @@ export async function updateCareAssessmentStatus(id: number, status: CareAssessm
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   await db.update(careAssessments).set({ status }).where(eq(careAssessments.id, id));
+}
+
+// Testimonials helpers
+
+export async function createTestimonial(data: InsertTestimonial): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.insert(testimonials).values(data);
+}
+
+export async function getPublishedTestimonials(): Promise<Testimonial[]> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  return await db.select().from(testimonials).where(eq(testimonials.isPublished, "yes")).orderBy(desc(testimonials.createdAt));
+}
+
+export async function getAllTestimonials(): Promise<Testimonial[]> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  return await db.select().from(testimonials).orderBy(desc(testimonials.createdAt));
+}
+
+export async function deleteTestimonial(id: number): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.delete(testimonials).where(eq(testimonials.id, id));
+}
+
+// Blog helpers
+
+export async function createBlogPost(data: InsertBlogPost): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.insert(blogPosts).values(data);
+}
+
+export async function getPublishedBlogPosts(): Promise<BlogPost[]> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  return await db.select().from(blogPosts).where(eq(blogPosts.isPublished, "yes")).orderBy(desc(blogPosts.createdAt));
+}
+
+export async function getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const result = await db.select().from(blogPosts).where(eq(blogPosts.slug, slug)).limit(1);
+  return result[0];
+}
+
+export async function getAllBlogPosts(): Promise<BlogPost[]> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  return await db.select().from(blogPosts).orderBy(desc(blogPosts.createdAt));
+}
+
+export async function updateBlogPost(id: number, data: Partial<InsertBlogPost>): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.update(blogPosts).set(data).where(eq(blogPosts.id, id));
+}
+
+export async function deleteBlogPost(id: number): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.delete(blogPosts).where(eq(blogPosts.id, id));
 }

@@ -211,6 +211,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--purple-primary)] mb-4">What Families Say About Us</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Real stories from families across Glasgow and East Dunbartonshire who trust Good Shepherd HomeCare Ltd.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { name: "Mrs. Thompson", quote: "The care my mum receives is exceptional. It is more than just a service, it is friendship.", rating: 5, location: "Glasgow" },
+              { name: "Mr. Robertson", quote: "After Dad's stroke, Good Shepherd made the transition home seamless. We felt confident he was safe.", rating: 5, location: "East Dunbartonshire" },
+              { name: "Mrs. Patel", quote: "My carer has become like a friend. We go for walks, do puzzles, and she always brightens my day.", rating: 5, location: "Bearsden" },
+            ].map((t) => (
+              <div key={t.name} className="bg-[var(--purple-lightest)] rounded-xl p-6">
+                <div className="flex gap-0.5 mb-3">
+                  {[1,2,3,4,5].map((s) => (
+                    <Star key={s} className={`w-4 h-4 ${s <= t.rating ? "fill-[var(--gold-primary)] text-[var(--gold-primary)]" : "text-muted"}`} />
+                  ))}
+                </div>
+                <p className="text-sm text-foreground italic mb-4">"{t.quote}"</p>
+                <p className="text-sm font-semibold text-[var(--purple-primary)]">{t.name}</p>
+                <p className="text-xs text-muted-foreground">{t.location}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/testimonials">
+              <Button variant="outline" className="border-[var(--purple-primary)] text-[var(--purple-primary)] gap-2">
+                Read All Reviews <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter */}
       <Newsletter />
 
