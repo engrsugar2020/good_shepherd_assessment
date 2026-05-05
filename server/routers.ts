@@ -5,6 +5,7 @@ import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { createCareAssessment, getAllCareAssessments, updateCareAssessmentStatus, createTestimonial, getPublishedTestimonials, getAllTestimonials, deleteTestimonial, createBlogPost, getPublishedBlogPosts, getBlogPostBySlug, getAllBlogPosts, updateBlogPost, deleteBlogPost } from "./db";
 import { notifyOwner } from "./_core/notification";
+import { sendAssessmentNotificationEmail } from "./email";
 import { TRPCError } from "@trpc/server";
 
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
@@ -54,11 +55,28 @@ export const appRouter = router({
           status: "new",
         });
 
-        // Send notification to owner (delivers to assessment@goodshepherdhomecare.co.uk via platform)
+        // Send email notification directly to assessment email
+        try {
+          await sendAssessmentNotificationEmail({
+            fullName: input.fullName,
+            phone: input.phone,
+            email: input.email || null,
+            location: input.location,
+            careType: input.careType,
+            urgency: input.urgency || null,
+            additionalDetails: input.additionalDetails || null,
+            preferredContactTime: input.preferredContactTime || null,
+            relationship: input.relationship || null,
+          });
+        } catch (e) {
+          console.error("[Email] Failed to send assessment email:", e);
+        }
+
+        // Also send platform notification to owner
         try {
           await notifyOwner({
             title: `New Care Assessment: ${input.fullName}`,
-            content: `A new care assessment has been submitted.\n\nName: ${input.fullName}\nPhone: ${input.phone}\nEmail: ${input.email || "Not provided"}\nLocation: ${input.location}\nCare Type: ${input.careType}\nUrgency: ${input.urgency || "Not specified"}\nPreferred Contact: ${input.preferredContactTime || "Not specified"}\nRelationship: ${input.relationship || "Not specified"}\nDetails: ${input.additionalDetails || "None provided"}\n\n---\nThis notification was sent to: ${process.env.ASSESSMENT_EMAIL || "assessment@goodshepherdhomecare.co.uk"}`,
+            content: `A new care assessment has been submitted.\n\nName: ${input.fullName}\nPhone: ${input.phone}\nEmail: ${input.email || "Not provided"}\nLocation: ${input.location}\nCare Type: ${input.careType}\nUrgency: ${input.urgency || "Not specified"}\nPreferred Contact: ${input.preferredContactTime || "Not specified"}\nRelationship: ${input.relationship || "Not specified"}\nDetails: ${input.additionalDetails || "None provided"}`,
           });
         } catch (e) {
           console.error("[Notification] Failed to notify owner:", e);

@@ -32,6 +32,11 @@ vi.mock("./_core/notification", () => ({
   notifyOwner: vi.fn().mockResolvedValue(true),
 }));
 
+// Mock email module to avoid real SMTP calls during testing
+vi.mock("./email", () => ({
+  sendAssessmentNotificationEmail: vi.fn().mockResolvedValue(true),
+}));
+
 function createPublicContext(): TrpcContext {
   return {
     user: null,

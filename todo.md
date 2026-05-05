@@ -31,3 +31,6 @@
 - [x] Build blog/news section with database storage
 - [x] Admin ability to create/manage blog posts
 - [x] Custom domain connection guidance for goodshepherdhomecare.co.uk
+- [x] Direct email notification to accessment@goodshepherdhomecare.co.uk via SMTP (nodemailer) - verified end-to-end
+- [x] Align recipient email address (accessment@goodshepherdhomecare.co.uk confirmed correct)
+- [x] End-to-end email sending verified (server log confirms: Assessment notification sent to accessment@goodshepherdhomecare.co.uk)
