@@ -84,9 +84,9 @@ export default function FAQ() {
               Our team is always happy to help. Call us or request a free care assessment.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="tel:+447815493302">
+              <a href="tel:+447947962839">
                 <Button variant="outline" className="border-[var(--purple-primary)] text-[var(--purple-primary)] gap-2">
-                  <Phone className="w-4 h-4" /> Call 07815 493302
+                  <Phone className="w-4 h-4" /> Call 07947 962839
                 </Button>
               </a>
               <Link href="/assessment">

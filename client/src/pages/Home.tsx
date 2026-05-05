@@ -88,10 +88,10 @@ export default function Home() {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
-                <a href="tel:+447815493302">
+                <a href="tel:+447947962839">
                   <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold text-base px-8 bg-transparent">
                     <Phone className="w-5 h-5 mr-2" />
-                    Call 07815 493302
+                    Call 07947 962839
                   </Button>
                 </a>
               </div>
@@ -230,7 +230,7 @@ export default function Home() {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-            <a href="tel:+447815493302">
+            <a href="tel:+447947962839">
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold text-base px-8 bg-transparent">
                 <Phone className="w-5 h-5 mr-2" />
                 Call Us Now

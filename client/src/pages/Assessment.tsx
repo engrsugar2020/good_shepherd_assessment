@@ -76,8 +76,8 @@ export default function Assessment() {
             <p className="text-sm text-[var(--purple-primary)] font-medium">
               Need immediate assistance? Call us directly:
             </p>
-            <a href="tel:+447815493302" className="text-lg font-bold text-[var(--purple-primary)] flex items-center justify-center gap-2 mt-1">
-              <Phone className="w-5 h-5" /> 07815 493302
+            <a href="tel:+447947962839" className="text-lg font-bold text-[var(--purple-primary)] flex items-center justify-center gap-2 mt-1">
+              <Phone className="w-5 h-5" /> 07947 962839
             </a>
           </div>
         </div>

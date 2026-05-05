@@ -16,8 +16,8 @@ const quickReplies = [
 
 const botResponses: Record<string, string> = {
   "what services do you offer?": "We offer a comprehensive range of home care services including:\n\n• Dementia Care\n• Respite Care\n• Companionship\n• Live-In Care\n• Post-Hospital Recovery\n• Complex Clinical Care\n\nEach service is tailored to individual needs. Would you like to know more about any specific service, or would you like to request a free care assessment?",
-  "how do i get a care assessment?": "Getting a care assessment is simple and completely free! You can:\n\n1. Fill out our online Free Care Assessment form\n2. Call us directly on 07815 493302\n3. Email us at assessment@goodshepherdhomecare.co.uk\n\nOur Senior Care Coordinator will respond within 2 hours during office hours. There's no obligation — it's just a friendly conversation to understand your needs.",
-  "what areas do you cover?": "We provide home care services across:\n\n• Glasgow City\n• East Dunbartonshire\n• Partick & West End\n• Bearsden and Milngavie\n\nOur local teams understand the communities they serve. If you're unsure whether we cover your area, please call us on 07815 493302.",
+  "how do i get a care assessment?": "Getting a care assessment is simple and completely free! You can:\n\n1. Fill out our online Free Care Assessment form\n2. Call us directly on 07947 962839\n3. Email us at assessment@goodshepherdhomecare.co.uk\n\nOur Senior Care Coordinator will respond within 2 hours during office hours. There's no obligation — it's just a friendly conversation to understand your needs.",
+  "what areas do you cover?": "We provide home care services across:\n\n• Glasgow City\n• East Dunbartonshire\n• Partick & West End\n• Bearsden and Milngavie\n\nOur local teams understand the communities they serve. If you're unsure whether we cover your area, please call us on 07947 962839.",
   "how are your carers vetted?": "We have one of the strictest vetting processes in the industry — the Good Shepherd Vetting Standard:\n\n• Enhanced PVG checks through Disclosure Scotland\n• Face-to-face assessments with practical care simulations\n• Triple reference checks\n• Mandatory monthly training workshops\n• Ongoing supervision and performance reviews\n\nEvery applicant must meet the Good Shepherd standard before joining our team.",
 };
 
@@ -53,10 +53,10 @@ function getBotResponse(input: string): string {
     return "Hello! Welcome to Good Shepherd HomeCare Ltd. I'm here to help you find the right care for your loved one. How can I assist you today?";
   }
   if (lower.includes("phone") || lower.includes("call") || lower.includes("contact") || lower.includes("number")) {
-    return "You can reach us on 07815 493302. We're available 24/7 for emergencies, and during office hours (Mon-Fri, 8am-6pm) for general enquiries. You can also email assessment@goodshepherdhomecare.co.uk.";
+    return "You can reach us on 07947 962839. We're available 24/7 for emergencies, and during office hours (Mon-Fri, 8am-6pm) for general enquiries. You can also email assessment@goodshepherdhomecare.co.uk.";
   }
   
-  return "Thank you for your question. For the most accurate and personalised response, I'd recommend:\n\n• Calling us on 07815 493302\n• Requesting a free care assessment\n• Emailing assessment@goodshepherdhomecare.co.uk\n\nOur team will be happy to help with your specific situation. Is there anything else I can help with?";
+  return "Thank you for your question. For the most accurate and personalised response, I'd recommend:\n\n• Calling us on 07947 962839\n• Requesting a free care assessment\n• Emailing assessment@goodshepherdhomecare.co.uk\n\nOur team will be happy to help with your specific situation. Is there anything else I can help with?";
 }
 
 export default function ChatBot() {

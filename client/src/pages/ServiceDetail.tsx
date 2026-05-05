@@ -163,9 +163,9 @@ export default function ServiceDetail() {
                     Free Assessment <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
-                <a href="tel:+447815493302" className="block">
+                <a href="tel:+447947962839" className="block">
                   <Button variant="outline" className="w-full border-[var(--purple-primary)] text-[var(--purple-primary)] gap-2">
-                    <Phone className="w-4 h-4" /> 07815 493302
+                    <Phone className="w-4 h-4" /> 07947 962839
                   </Button>
                 </a>
                 <div className="mt-4 pt-4 border-t border-border text-xs text-muted-foreground space-y-1">

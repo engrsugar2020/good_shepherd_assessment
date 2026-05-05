@@ -35,7 +35,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <a href="tel:+447815493302" className="text-[var(--purple-primary)] font-medium text-lg hover:underline">07815 493302</a>
+                    <a href="tel:+447947962839" className="text-[var(--purple-primary)] font-medium text-lg hover:underline">07947 962839</a>
                     <p className="text-sm text-muted-foreground mt-1">Available 24/7 for emergencies</p>
                   </div>
                 </div>

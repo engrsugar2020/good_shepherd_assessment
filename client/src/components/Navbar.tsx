@@ -28,9 +28,9 @@ export default function Navbar() {
             <span className="hidden md:inline">|</span>
             <span className="hidden md:inline">Care Inspectorate Registered</span>
           </div>
-          <a href="tel:+447815493302" className="flex items-center gap-1.5 hover:text-[var(--gold-primary)] transition-colors">
+          <a href="tel:+447947962839" className="flex items-center gap-1.5 hover:text-[var(--gold-primary)] transition-colors">
             <Phone className="w-3.5 h-3.5" />
-            <span>07815 493302</span>
+            <span>07947 962839</span>
           </a>
         </div>
       </div>

@@ -21,7 +21,8 @@
 - [x] Add Instagram and Facebook social links in footer
 - [x] Add Careers/Recruitment page with hr@goodshepherdhomecare.co.uk
 - [x] Upgrade design quality with premium purple/gold aesthetic
-- [ ] Provide GoDaddy migration guidance (in delivery message)
+- [x] Provide GoDaddy migration guidance (in delivery message)
 - [x] AI chatbot (rule-based assistant with common care questions - upgradeable to full AI later)
 - [x] Newsletter subscription UI (stores to DB, marketing integration to be connected post-launch)
 - [x] Email notifications via platform notification system (delivers to owner inbox)
+- [x] Replace phone number to +447947962839 throughout the site
