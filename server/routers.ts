@@ -54,11 +54,11 @@ export const appRouter = router({
           status: "new",
         });
 
-        // Send notification to owner
+        // Send notification to owner (delivers to assessment@goodshepherdhomecare.co.uk via platform)
         try {
           await notifyOwner({
             title: `New Care Assessment: ${input.fullName}`,
-            content: `A new care assessment has been submitted.\n\nName: ${input.fullName}\nPhone: ${input.phone}\nEmail: ${input.email || "Not provided"}\nLocation: ${input.location}\nCare Type: ${input.careType}\nUrgency: ${input.urgency || "Not specified"}\nDetails: ${input.additionalDetails || "None provided"}`,
+            content: `A new care assessment has been submitted.\n\nName: ${input.fullName}\nPhone: ${input.phone}\nEmail: ${input.email || "Not provided"}\nLocation: ${input.location}\nCare Type: ${input.careType}\nUrgency: ${input.urgency || "Not specified"}\nPreferred Contact: ${input.preferredContactTime || "Not specified"}\nRelationship: ${input.relationship || "Not specified"}\nDetails: ${input.additionalDetails || "None provided"}\n\n---\nThis notification was sent to: ${process.env.ASSESSMENT_EMAIL || "assessment@goodshepherdhomecare.co.uk"}`,
           });
         } catch (e) {
           console.error("[Notification] Failed to notify owner:", e);

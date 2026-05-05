@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ChatBot from "./components/ChatBot";
 import Home from "./pages/Home";
 import { lazy, Suspense } from "react";
 
@@ -16,6 +17,7 @@ const FAQ = lazy(() => import("./pages/FAQ"));
 const Services = lazy(() => import("./pages/Services"));
 const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
+const Careers = lazy(() => import("./pages/Careers"));
 
 function PageLoader() {
   return (
@@ -36,6 +38,7 @@ function Router() {
         <Route path="/faq" component={FAQ} />
         <Route path="/services" component={Services} />
         <Route path="/services/:slug" component={ServiceDetail} />
+        <Route path="/careers" component={Careers} />
         <Route path="/admin" component={AdminDashboard} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
@@ -56,6 +59,7 @@ function App() {
               <Router />
             </main>
             <Footer />
+            <ChatBot />
           </div>
         </TooltipProvider>
       </ThemeProvider>

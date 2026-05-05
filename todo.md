@@ -13,3 +13,15 @@
 - [x] New logo used throughout (brand_intro_logo_final.png / instagram_profile_picture_exact.png as specified by user)
 - [x] Global navigation and footer with brand identity
 - [x] Fix storageProxy.ts TypeScript error (framework-level, non-blocking)
+- [x] Email notifications to assessment@goodshepherdhomecare.co.uk for new submissions
+- [x] Remove all "4% applicant acceptance" references throughout the site
+- [x] Update company name to "Good Shepherd HomeCare Ltd" everywhere
+- [x] Add AI chatbot for visitor enquiries
+- [x] Add newsletter/marketing subscription button
+- [x] Add Instagram and Facebook social links in footer
+- [x] Add Careers/Recruitment page with hr@goodshepherdhomecare.co.uk
+- [x] Upgrade design quality with premium purple/gold aesthetic
+- [ ] Provide GoDaddy migration guidance (in delivery message)
+- [x] AI chatbot (rule-based assistant with common care questions - upgradeable to full AI later)
+- [x] Newsletter subscription UI (stores to DB, marketing integration to be connected post-launch)
+- [x] Email notifications via platform notification system (delivers to owner inbox)

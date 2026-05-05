@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "How are carers vetted?",
-    answer: "All our carers undergo a rigorous enhanced PVG (Protecting Vulnerable Groups) check through Disclosure Scotland, provide verified professional references, and complete our intensive proprietary training programme. We also conduct face-to-face assessments with practical care simulations, triple reference checks from past employers and character witnesses, and require mandatory monthly training workshops. Only 4% of applicants meet the Good Shepherd standard.",
+    answer: "All our carers undergo a rigorous enhanced PVG (Protecting Vulnerable Groups) check through Disclosure Scotland, provide verified professional references, and complete our intensive proprietary training programme. We also conduct face-to-face assessments with practical care simulations, triple reference checks from past employers and character witnesses, and require mandatory monthly training workshops. Every applicant must meet the Good Shepherd standard before they can join our team.",
   },
   {
     question: "What areas do you cover?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "Are you registered with the Care Inspectorate?",
-    answer: "Yes, Good Shepherd Home Care is fully registered with the Care Inspectorate, Scotland's independent regulator for care services. We maintain the highest standards of compliance and welcome regular inspections as an opportunity to demonstrate our commitment to excellence.",
+    answer: "Yes, Good Shepherd HomeCare Ltd is fully registered with the Care Inspectorate, Scotland's independent regulator for care services. We maintain the highest standards of compliance and welcome regular inspections as an opportunity to demonstrate our commitment to excellence.",
   },
   {
     question: "What happens during a care assessment?",

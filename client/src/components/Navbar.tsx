@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
   { href: "/faq", label: "FAQ" },
 ];
@@ -37,12 +38,12 @@ export default function Navbar() {
       {/* Main nav */}
       <nav className="container flex items-center justify-between py-3">
         <Link href="/" className="flex items-center gap-3">
-          <img src={LOGO_URL} alt="Good Shepherd Home Care" className="h-12 w-12 rounded-full object-cover" />
+          <img src={LOGO_URL} alt="Good Shepherd HomeCare Ltd" className="h-12 w-12 rounded-full object-cover" />
           <div className="hidden sm:block">
             <span className="text-lg font-bold text-[var(--purple-primary)]" style={{ fontFamily: "'Playfair Display', serif" }}>
               Good Shepherd
             </span>
-            <span className="block text-xs text-muted-foreground tracking-wider uppercase">Home Care</span>
+            <span className="block text-xs text-muted-foreground tracking-wider uppercase">HomeCare Ltd</span>
           </div>
         </Link>
 

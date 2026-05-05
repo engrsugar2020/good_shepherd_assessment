@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Clock, Star, ArrowRight, Phone, CheckCircle } from "lucide-react";
+import Newsletter from "@/components/Newsletter";
 
 const HERO_IMAGE = "/manus-storage/meet_the_team_v3_3f4f8fbc.png";
 const COMPANIONSHIP_IMAGE = "/manus-storage/companionship_care_23d4f34f.png";
@@ -51,7 +52,7 @@ const services = [
 
 const stats = [
   { value: "4.8/5", label: "Homecare.co.uk Rating" },
-  { value: "4%", label: "Applicant Acceptance Rate" },
+  { value: "10+", label: "Years Combined Experience" },
   { value: "24/7", label: "Support Available" },
   { value: "100%", label: "Care Inspectorate Compliant" },
 ];
@@ -104,7 +105,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-[var(--gold-primary)]/20 rounded-2xl blur-xl"></div>
                 <img
                   src={HERO_IMAGE}
-                  alt="Good Shepherd Home Care Team"
+                  alt="Good Shepherd HomeCare Ltd Team"
                   className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
                 />
               </div>
@@ -173,7 +174,7 @@ export default function Home() {
                 Why Families Trust <span className="text-[var(--gold-primary)]">Good Shepherd</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                We understand the anxiety of welcoming a carer into your home. That is why our vetting process is among the strictest in the industry — only 4% of applicants meet the Good Shepherd standard.
+                We understand the anxiety of welcoming a carer into your home. That is why our vetting process is among the strictest in the industry — every applicant must meet the Good Shepherd standard.
               </p>
               <div className="space-y-4">
                 {[
@@ -209,6 +210,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Newsletter */}
+      <Newsletter />
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[var(--purple-deep)] to-[var(--purple-primary)] py-16">

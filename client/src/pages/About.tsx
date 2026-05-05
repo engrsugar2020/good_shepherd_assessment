@@ -17,7 +17,7 @@ export default function About() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[var(--purple-deep)] to-[var(--purple-primary)] py-16 lg:py-20">
         <div className="container text-center text-white">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">About Good Shepherd Home Care</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">About Good Shepherd HomeCare Ltd</h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Founded on the belief that home care should be built on compassion, trust, and genuine human connection — not just efficiency.
           </p>
@@ -31,7 +31,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-[var(--purple-primary)] mb-6">Our Story</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Good Shepherd Home Care was founded by Wendy Ejikeme with a simple but powerful vision: to provide home care that truly adapts to the individual. Having witnessed first-hand the challenges families face when seeking quality care, Wendy set out to create a service that puts people first.
+                Good Shepherd HomeCare Ltd was founded by Wendy Ejikeme with a simple but powerful vision: to provide home care that truly adapts to the individual. Having witnessed first-hand the challenges families face when seeking quality care, Wendy set out to create a service that puts people first.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Today, we serve families across Glasgow, East Dunbartonshire, Partick, Bearsden and Milngavie with a diverse team of caregivers who bring warmth, professionalism, and genuine connection to every home they enter.
@@ -80,7 +80,7 @@ export default function About() {
               </div>
               <h2 className="text-3xl font-bold text-[var(--purple-primary)] mb-6">The Good Shepherd Vetting Standard</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We understand the anxiety of welcoming a stranger into your home. That is why our vetting process is among the strictest in the industry — only 4% of applicants meet the Good Shepherd standard.
+                We understand the anxiety of welcoming a stranger into your home. That is why our vetting process is among the strictest in the industry — every applicant must meet the Good Shepherd standard.
               </p>
               <div className="space-y-4">
                 {[
