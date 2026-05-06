@@ -18,7 +18,7 @@ export default function About() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[var(--purple-deep)] to-[var(--purple-primary)] py-16 lg:py-20">
         <div className="container text-center text-white">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">About Good Shepherd HomeCare Ltd</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">About The Good Shepherd Home Care Ltd</h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Founded on the belief that home care should be built on compassion, trust, and genuine human connection — not just efficiency.
           </p>
@@ -32,7 +32,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-[var(--purple-primary)] mb-6">Our Story</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Good Shepherd HomeCare Ltd was founded by Wendy Ejihkeme with a simple but powerful vision: to provide home care that truly adapts to the individual. Having witnessed first-hand the challenges families face when seeking quality care, Wendy set out to create a service that puts people first.
+                The Good Shepherd Home Care Ltd was founded by Wendy Ejihkeme with a simple but powerful vision: to provide home care that truly adapts to the individual. Having witnessed first-hand the challenges families face when seeking quality care, Wendy set out to create a service that puts people first.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Today, we serve families across Glasgow, East Dunbartonshire, Partick, Bearsden and Milngavie with a diverse team of caregivers who bring warmth, professionalism, and genuine connection to every home they enter.
@@ -60,10 +60,10 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-[var(--purple-primary)] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Meet Our Founder</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <span className="font-semibold text-foreground">Wendy Ejihkeme</span> founded Good Shepherd HomeCare Ltd with a clear mission: to transform home care by placing genuine human connection at its heart.
+                <span className="font-semibold text-foreground">Wendy Ejihkeme</span> founded The Good Shepherd Home Care Ltd with a clear mission: to transform home care by placing genuine human connection at its heart.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                With years of experience in the care sector, Wendy recognised that families needed more than just a service provider — they needed a partner they could trust completely. This insight became the foundation of Good Shepherd HomeCare Ltd.
+                With years of experience in the care sector, Wendy recognised that families needed more than just a service provider — they needed a partner they could trust completely. This insight became the foundation of The Good Shepherd Home Care Ltd.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Today, Wendy leads a team of dedicated professionals who share her vision of delivering compassionate, person-centred care that truly adapts to each individual's unique needs.
@@ -130,7 +130,7 @@ export default function About() {
       {/* CTA */}
       <section className="bg-gradient-to-r from-[var(--purple-deep)] to-[var(--purple-primary)] py-16">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Join the Good Shepherd Family</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Join The Good Shepherd Family</h2>
           <p className="text-white/80 mb-8 max-w-xl mx-auto">
             Whether you need care for a loved one or want to join our exceptional team, we would love to hear from you.
           </p>

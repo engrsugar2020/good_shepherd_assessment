@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-[var(--gold-primary)]/20 rounded-2xl blur-xl"></div>
                 <img
                   src={HERO_IMAGE}
-                  alt="Good Shepherd HomeCare Ltd Team"
+                  alt="The Good Shepherd Home Care Ltd Team"
                   className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
                 />
               </div>
@@ -171,7 +171,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-[var(--purple-primary)] mb-6">
-                Why Families Trust <span className="text-[var(--gold-primary)]">Good Shepherd</span>
+                Why Families Trust <span className="text-[var(--gold-primary)]">The Good Shepherd</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 We understand the anxiety of welcoming a carer into your home. That is why our vetting process is among the strictest in the industry — every applicant must meet the Good Shepherd standard.
@@ -216,7 +216,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-10">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--purple-primary)] mb-4">What Families Say About Us</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Real stories from families across Glasgow and East Dunbartonshire who trust Good Shepherd HomeCare Ltd.</p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Real stories from families across Glasgow and East Dunbartonshire who trust The Good Shepherd Home Care Ltd.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[

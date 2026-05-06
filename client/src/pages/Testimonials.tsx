@@ -5,7 +5,7 @@ import { trpc } from "@/lib/trpc";
 
 const fallbackTestimonials = [
   { id: 1, clientName: "Mrs. Thompson", relationship: "Daughter", location: "Glasgow", rating: 5, content: "The care my mum receives is exceptional. It is more than just a service, it is friendship. The carers are always punctual, professional, and genuinely caring. Mum looks forward to their visits every day.", serviceType: "Companionship", createdAt: new Date().toISOString() },
-  { id: 2, clientName: "Mr. Robertson", relationship: "Son", location: "East Dunbartonshire", rating: 5, content: "After Dad's stroke, we were terrified about bringing him home from hospital. Good Shepherd HomeCare Ltd made the transition seamless. Their post-hospital recovery service gave us confidence that Dad was safe and well cared for.", serviceType: "Post-Hospital Recovery", createdAt: new Date().toISOString() },
+  { id: 2, clientName: "Mr. Robertson", relationship: "Son", location: "East Dunbartonshire", rating: 5, content: "After Dad's stroke, we were terrified about bringing him home from hospital. The Good Shepherd Home Care Ltd made the transition seamless. Their post-hospital recovery service gave us confidence that Dad was safe and well cared for.", serviceType: "Post-Hospital Recovery", createdAt: new Date().toISOString() },
   { id: 3, clientName: "Mrs. Patel", relationship: "Self", location: "Bearsden", rating: 5, content: "I was hesitant about accepting help, but my carer has become like a friend. We go for walks in the park, do puzzles together, and she always brightens my day. I cannot recommend Good Shepherd enough.", serviceType: "Companionship", createdAt: new Date().toISOString() },
   { id: 4, clientName: "Mr. & Mrs. Campbell", relationship: "Family", location: "Partick", rating: 5, content: "The respite care service has been a lifeline for our family. Knowing Mum is in safe, caring hands while we take a break gives us the peace of mind we desperately needed. The carers are wonderful.", serviceType: "Respite Care", createdAt: new Date().toISOString() },
   { id: 5, clientName: "Mrs. Okonkwo", relationship: "Daughter", location: "Glasgow", rating: 5, content: "My mother has dementia and the specialist care she receives is outstanding. The carers are patient, kind, and truly understand how to support someone with memory loss. They treat her with such dignity.", serviceType: "Dementia Care", createdAt: new Date().toISOString() },
@@ -36,7 +36,7 @@ export default function Testimonials() {
         <div className="container text-center text-white">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">What Our Clients Say</h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Real stories from real families. Discover why families across Glasgow and East Dunbartonshire trust Good Shepherd HomeCare Ltd.
+            Real stories from real families. Discover why families across Glasgow and East Dunbartonshire trust The Good Shepherd Home Care Ltd.
           </p>
           <div className="mt-6 inline-flex items-center gap-2 bg-white/10 rounded-full px-5 py-2">
             <div className="flex gap-0.5">

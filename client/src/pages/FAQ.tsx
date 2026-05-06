@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "Are you registered with the Care Inspectorate?",
-    answer: "Yes, Good Shepherd HomeCare Ltd is fully registered with the Care Inspectorate, Scotland's independent regulator for care services. We maintain the highest standards of compliance and welcome regular inspections as an opportunity to demonstrate our commitment to excellence.",
+    answer: "Yes, The Good Shepherd Home Care Ltd is fully registered with the Care Inspectorate, Scotland's independent regulator for care services. We maintain the highest standards of compliance and welcome regular inspections as an opportunity to demonstrate our commitment to excellence.",
   },
   {
     question: "What happens during a care assessment?",

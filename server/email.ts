@@ -76,7 +76,7 @@ export async function sendAssessmentNotificationEmail(
   const htmlContent = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
       <div style="background: linear-gradient(135deg, #4a1d8e, #6b2fa0); padding: 20px; border-radius: 8px 8px 0 0;">
-        <h1 style="color: #d4af37; margin: 0; font-size: 24px;">🐑 Good Shepherd HomeCare Ltd</h1>
+        <h1 style="color: #d4af37; margin: 0; font-size: 24px;">🐑 The Good Shepherd Home Care Ltd</h1>
         <p style="color: #ffffff; margin: 5px 0 0 0; font-size: 14px;">New Care Assessment Submission</p>
       </div>
       
@@ -128,7 +128,7 @@ export async function sendAssessmentNotificationEmail(
           Please respond within 2 hours as promised on our website.
         </p>
         <p style="color: #ffffff; margin: 5px 0 0 0; font-size: 11px;">
-          Good Shepherd HomeCare Ltd | +44 7947 962839
+          The Good Shepherd Home Care Ltd | +44 7947 962839
         </p>
       </div>
     </div>
@@ -150,12 +150,12 @@ Additional Details: ${data.additionalDetails || "None provided"}
 
 ================================
 Please respond within 2 hours as promised on our website.
-Good Shepherd HomeCare Ltd | +44 7947 962839
+The Good Shepherd Home Care Ltd | +44 7947 962839
   `.trim();
 
   try {
     await transporter.sendMail({
-      from: `"Good Shepherd HomeCare" <${SMTP_CONFIG.user}>`,
+      from: `"The Good Shepherd Home Care" <${SMTP_CONFIG.user}>`,
       to: recipientEmail,
       subject: `New Care Assessment: ${data.fullName} - ${data.careType}`,
       text: textContent,

@@ -7,7 +7,7 @@ const serviceData: Record<string, { title: string; description: string; image: s
     title: "Dementia Care",
     image: "/manus-storage/dementia_care_02fe9ada.png",
     description: "Person-centred dementia care focused on dignity, routine, and cognitive stimulation in a familiar environment.",
-    longDescription: "Navigating memory loss is a journey that requires patience, understanding, and specialised support. At Good Shepherd HomeCare Ltd, our Dementia Care services are built around the individual, focusing on dignity and maintaining a familiar, safe environment. Our caregivers undergo mandatory monthly workshops, including specialised training with Dementia UK, to ensure they provide the highest standard of person-centred care.",
+    longDescription: "Navigating memory loss is a journey that requires patience, understanding, and specialised support. At The Good Shepherd Home Care Ltd, our Dementia Care services are built around the individual, focusing on dignity and maintaining a familiar, safe environment. Our caregivers undergo mandatory monthly workshops, including specialised training with Dementia UK, to ensure they provide the highest standard of person-centred care.",
     features: [
       "Specialist-trained carers with Dementia UK certification",
       "Person-centred care plans adapted to individual needs",
@@ -23,7 +23,7 @@ const serviceData: Record<string, { title: string; description: string; image: s
     title: "Respite Care",
     image: "/manus-storage/respite_care_39d20f5c.png",
     description: "Giving family caregivers the break they deserve while ensuring your loved one remains safe and happy.",
-    longDescription: "Being a family caregiver is an act of profound love, but it can also be overwhelming. We understand that you need a break to recharge, and that is exactly what our Respite Care services are designed for. Whether you need a few days to rest or a few weeks to handle personal matters, Good Shepherd HomeCare Ltd is here to step in with the same level of compassion and professionalism your loved one deserves.",
+    longDescription: "Being a family caregiver is an act of profound love, but it can also be overwhelming. We understand that you need a break to recharge, and that is exactly what our Respite Care services are designed for. Whether you need a few days to rest or a few weeks to handle personal matters, The Good Shepherd Home Care Ltd is here to step in with the same level of compassion and professionalism your loved one deserves.",
     features: [
       "Flexible scheduling — hours, days, or weeks",
       "Seamless transition with detailed handover",
@@ -39,7 +39,7 @@ const serviceData: Record<string, { title: string; description: string; image: s
     title: "Companionship",
     image: "/manus-storage/companionship_care_23d4f34f.png",
     description: "Genuine friendship and social connection that makes every day brighter and combats loneliness.",
-    longDescription: "Care is so much more than just physical support. It is about connection, laughter, and shared moments that make life rich. At Good Shepherd HomeCare Ltd, our companionship service brings genuine friendship into the homes of those who need it most. Whether it is a chat over tea, looking through old photographs, or simply having someone to listen — our caregivers provide the social connection that makes every day brighter.",
+    longDescription: "Care is so much more than just physical support. It is about connection, laughter, and shared moments that make life rich. At The Good Shepherd Home Care Ltd, our companionship service brings genuine friendship into the homes of those who need it most. Whether it is a chat over tea, looking through old photographs, or simply having someone to listen — our caregivers provide the social connection that makes every day brighter.",
     features: [
       "Meaningful conversation and emotional support",
       "Accompanied outings and social activities",

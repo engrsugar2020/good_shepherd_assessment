@@ -53,7 +53,7 @@ export default function Blog() {
         <div className="container text-center text-white">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">News & Care Tips</h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Helpful resources, care tips, and company updates from Good Shepherd HomeCare Ltd.
+            Helpful resources, care tips, and company updates from The Good Shepherd Home Care Ltd.
           </p>
         </div>
       </section>

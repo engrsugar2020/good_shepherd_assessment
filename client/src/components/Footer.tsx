@@ -11,12 +11,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={LOGO_URL} alt="Good Shepherd HomeCare Ltd" className="h-12 w-12 rounded-full object-cover" />
+              <img src={LOGO_URL} alt="The Good Shepherd Home Care Ltd" className="h-12 w-12 rounded-full object-cover" />
               <div>
-                <span className="text-lg font-bold text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  Good Shepherd
+                  <span className="text-lg font-bold text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  The Good Shepherd
                 </span>
-                <span className="block text-xs text-[var(--gold-primary)] tracking-wider uppercase">HomeCare Ltd</span>
+                <span className="block text-xs text-[var(--gold-primary)] tracking-wider uppercase">Home Care Ltd</span>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-4">
@@ -55,7 +55,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[var(--gold-primary)]" />
-                <a href="mailto:thegoodshepherd.net@gmail.com" className="hover:text-white transition-colors">thegoodshepherd.net@gmail.com</a>
+                <a href="mailto:info@tsghomecare.com" className="hover:text-white transition-colors">info@tsghomecare.com</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[var(--gold-primary)] mt-0.5" />
@@ -84,7 +84,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="container py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/50">
-          <p>&copy; {new Date().getFullYear()} Good Shepherd HomeCare Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Good Shepherd Home Care Ltd. All rights reserved.</p>
           <p>Serving Glasgow &amp; East Dunbartonshire with compassion.</p>
         </div>
       </div>

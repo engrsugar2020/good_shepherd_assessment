@@ -34,3 +34,5 @@
 - [x] Direct email notification to accessment@goodshepherdhomecare.co.uk via SMTP (nodemailer) - verified end-to-end
 - [x] Align recipient email address (accessment@goodshepherdhomecare.co.uk confirmed correct)
 - [x] End-to-end email sending verified (server log confirms: Assessment notification sent to accessment@goodshepherdhomecare.co.uk)
+- [x] Correct company name to 'The Good Shepherd Home Care Ltd' throughout the site
+- [x] Change contact email to info@tsghomecare.com and remove Gmail references

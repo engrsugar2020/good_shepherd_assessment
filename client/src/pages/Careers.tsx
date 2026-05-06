@@ -32,7 +32,7 @@ export default function Careers() {
             <div className="text-white">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4">Join Our Caring Team</h1>
               <p className="text-lg text-white/80 mb-6">
-                Make a real difference every day. Good Shepherd HomeCare Ltd is looking for compassionate, dedicated individuals to join our growing team across Glasgow and East Dunbartonshire.
+                Make a real difference every day. The Good Shepherd Home Care Ltd is looking for compassionate, dedicated individuals to join our growing team across Glasgow and East Dunbartonshire.
               </p>
               <a href="mailto:hr@goodshepherdhomecare.co.uk">
                 <Button size="lg" className="bg-[var(--gold-primary)] hover:bg-[var(--gold-dark)] text-[var(--purple-deep)] font-bold gap-2">
@@ -50,7 +50,7 @@ export default function Careers() {
       {/* Why Join Us */}
       <section className="py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold text-[var(--purple-primary)] text-center mb-12">Why Join Good Shepherd HomeCare Ltd?</h2>
+          <h2 className="text-3xl font-bold text-[var(--purple-primary)] text-center mb-12">Why Join The Good Shepherd Home Care Ltd?</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {values.map((value) => (
               <div key={value.title} className="text-center p-6 bg-white rounded-xl border border-border shadow-sm">
@@ -107,7 +107,7 @@ export default function Careers() {
           </div>
           <div className="mt-8">
             <p className="text-sm text-muted-foreground mb-4">
-              Good Shepherd HomeCare Ltd is an equal opportunities employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
+              The Good Shepherd Home Care Ltd is an equal opportunities employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
             </p>
           </div>
         </div>

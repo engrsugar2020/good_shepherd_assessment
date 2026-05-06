@@ -45,7 +45,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:thegoodshepherd.net@gmail.com" className="text-[var(--purple-primary)] font-medium hover:underline">thegoodshepherd.net@gmail.com</a>
+                    <a href="mailto:info@tsghomecare.com" className="text-[var(--purple-primary)] font-medium hover:underline">info@tsghomecare.com</a>
                     <p className="text-sm text-muted-foreground mt-1">We respond within 2 hours during office hours</p>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ export default function Contact() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Good Shepherd HomeCare Ltd Service Area"
+                  title="The Good Shepherd Home Care Ltd Service Area"
                 ></iframe>
               </div>
 

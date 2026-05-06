@@ -29,7 +29,7 @@ export default function Newsletter() {
             </h3>
           </div>
           <p className="text-muted-foreground">
-            Thank you for subscribing to Good Shepherd HomeCare Ltd updates. You'll receive care tips, company news, and helpful resources.
+            Thank you for subscribing to The Good Shepherd Home Care Ltd updates. You'll receive care tips, company news, and helpful resources.
           </p>
         </div>
       </section>
@@ -46,7 +46,7 @@ export default function Newsletter() {
           </h3>
         </div>
         <p className="text-muted-foreground mb-6">
-          Subscribe to receive care tips, company updates, and helpful resources from Good Shepherd HomeCare Ltd.
+          Subscribe to receive care tips, company updates, and helpful resources from The Good Shepherd Home Care Ltd.
         </p>
         <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <input
