@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const LOGO_URL = "/manus-storage/good_shepherd_logo_square_e9ed65ad.png";
+const LOGO_URL = "/manus-storage/good_shepherd_logo_81767f4e.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
